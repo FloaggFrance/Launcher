@@ -4,7 +4,7 @@ let htmlBody = document.querySelector('body')
 let BannerImg = document.getElementById('game-image-banner')
 let BannerLogo = document.getElementById('game-logo-banner')
 
-let gSelector = document.querySelectorAll('.gSelector')
+let gSelector = null
 let lgSelector = document.querySelectorAll('.lgSelector')
 
 let gbName = "g"
@@ -24,53 +24,29 @@ window.onkeydown = (e) => {
 	let key = e.code;
 	console.log(key)
 
-	if(key == "ArrowRight") {
-		gameSound("./button.mp3")
+	if(lgL !== null)
+		gSelector = lgL.querySelectorAll('.gSelector')
 
-		if(gbNum < gSelector.length)
-	 		gbNum++;
+	if(key == "ArrowRight")
+		rightKey()
 
-	 	gL = lgL.querySelector("#"+gbName+gbNum)
-		gR = lgL.querySelector("#"+gbName+(gbNum-1))
+	if(key == "ArrowLeft")
+		leftKey()
 
-		setTimeout(()=>{
-			addFocus(gL)
-			removeFocus(gR)
-
-			bannerUpdate(gL.dataset.bImg, gL.dataset.bLogo, "block")
-
-			scrollSelectorGame()
-		}, 120)
-	}
-	if(key == "ArrowLeft") {
-		if(gbNum > 0)
-	 		gbNum--;
-
-	 	gL = lgL.querySelector("#"+gbName+gbNum)
-		gR = lgL.querySelector("#"+gbName+(gbNum+1))
-		
-		setTimeout(()=>{
-			addFocus(gL)
-			removeFocus(gR)
-
-			if(gL !== null)
-				bannerUpdate(gL.dataset.bImg, gL.dataset.bLogo, "block")
-
-			if(gbNum == 0)
-				bannerUpdate("https://www.spawnpoiint.com/wp-content/uploads/Wallpaper-Blue-Icons-PS4-1920x1080.png", "none", "none")
-
-			scrollSelectorGame()
-		}, 120)
-		gameSound("./button.mp3")
-	}
 	if(key == "Escape") {
 		nameH('Home')
 		gameSound("./back.mp3")
 		setTimeout(function() {
 			gbNum = 0
+			lgbNum = 0
 			bannerUpdate("https://www.spawnpoiint.com/wp-content/uploads/Wallpaper-Blue-Icons-PS4-1920x1080.png", "none", "none")
 			
 			scrollSelectorGame()
+
+			lgL.classList.remove('focus')
+			lgL=null
+			lgR=null
+			document.getElementById('content-lists').style.transform = "translateY(-0px)"
 
 			gSelector.forEach(function(e) {
 	 			removeFocus(e)
@@ -78,59 +54,13 @@ window.onkeydown = (e) => {
 		}, 300)
 	}
 
-	if(key == "ArrowDown") {
+	if(key == "ArrowDown")
+		downKey()
 
-		gameSound("./button.mp3")
+	if(key == "ArrowUp")
+		upKey()
 
-		if(lgbNum < lgSelector.length)
-	 		lgbNum++;
-
-	 	lgL = document.getElementById(lgbName+lgbNum)
-		lgR = document.getElementById(lgbName+(lgbNum-1))
-		var positions = elementPosition(lgL);
-		let go = positions.clientY-150
-		if(lgbNum == 1)
-			go = 0
-
-		if(lgL !== null) {
-		 	lgL.classList.add('focus')
-		 	lgL.style.transform = "scale(.9) "
-		 	document.getElementById('content-lists').style.transform = "translateY(-"+(go)+"px)"
-			nameH(lgL.dataset.name)
-		}
-
-		if(lgR !== null) {
-		 	lgR.classList.remove('focus')
-		 	lgR.style.transform = "scale(.8)"
-		}
-	}
-
-	if(key == "ArrowUp") {
-		gameSound("./button.mp3")
-
-		if(lgbNum > 0)
-	 		lgbNum--;
-
-	 	lgL = document.getElementById(lgbName+lgbNum)
-		lgR = document.getElementById(lgbName+(lgbNum+1))
-		var positions = elementPosition(lgL);
-		let go = positions.clientY-150
-		if(lgbNum == 1)
-			go = 0
-
-		if(lgL !== null) {
-		 	lgL.classList.add('focus')
-		 	lgL.style.transform = "scale(.9) "
-		 	document.getElementById('content-lists').style.transform = "translateY(-"+(go)+"px)"
-			nameH(lgL.dataset.name)
-		}
-
-		if(lgR !== null) {
-		 	lgR.classList.remove('focus')
-		 	lgR.style.transform = "scale(.8)"
-		}
-		console.log(positions.viewportY)
-	}
+	console.log(lgbNum)
 }
 
 
@@ -173,9 +103,7 @@ function scrollSelectorGame() {
  	if(gbNum > 1)
  		bb = -((98*(gbNum-1))-20)
 
- 		//if(gNum > 1) {
  	lgL.style.transform = "translateX("+bb+"px)"
- 		//}
 
  	if(gbNum == 0) {
  		lgL.style.transform = "scale(.8)"
@@ -246,5 +174,105 @@ if(videoPlayer !== null) {
 		setTimeout(function() {
 			videoPlayer.play()
 		}, a)
+	}
+}
+
+
+function leftKey() {
+	if(gbNum > 0)
+	 	gbNum--;
+
+	gL = lgL.querySelector("#"+gbName+gbNum)
+	gR = lgL.querySelector("#"+gbName+(gbNum+1))
+	
+	if(lgL !== null) {
+		setTimeout(()=>{
+			addFocus(gL)
+			removeFocus(gR)
+
+			if(gL !== null)
+				bannerUpdate(gL.dataset.bImg, gL.dataset.bLogo, "block")
+
+			if(gbNum == 0)
+				bannerUpdate("https://www.spawnpoiint.com/wp-content/uploads/Wallpaper-Blue-Icons-PS4-1920x1080.png", "none", "none")
+
+			scrollSelectorGame()
+		}, 120)
+		gameSound("./button.mp3")
+	}
+}
+function rightKey() {
+	gameSound("./button.mp3")
+
+		if(gbNum < gSelector.length)
+	 		gbNum++;
+
+	 	gL = lgL.querySelector("#"+gbName+gbNum)
+		gR = lgL.querySelector("#"+gbName+(gbNum-1))
+
+		if(lgL !== null) {
+			setTimeout(()=>{
+				addFocus(gL)
+				removeFocus(gR)
+
+				bannerUpdate(gL.dataset.bImg, gL.dataset.bLogo, "block")
+
+				scrollSelectorGame()
+			}, 120)
+		}
+}
+function upKey() {
+	gameSound("./button.mp3")
+
+		if(lgbNum > 1)
+	 		lgbNum--;
+	 	//return null
+
+	 	lgL = document.getElementById(lgbName+lgbNum)
+		lgR = document.getElementById(lgbName+(lgbNum+1))
+		var positions = elementPosition(lgL);
+		let go = positions.clientY-150
+		if(lgbNum == 1)
+			go = 0
+
+		if(lgL !== null) {
+		 	lgL.classList.add('focus')
+		 	lgL.style.transform = "scale(.9) "
+		 	document.getElementById('content-lists').style.transform = "translateY(-"+(go)+"px)"
+			nameH(lgL.dataset.name)
+		}
+
+		if(lgR !== null) {
+		 	lgR.classList.remove('focus')
+		 	lgR.style.transform = "scale(.8)"
+		}
+		console.log(positions.viewportY)
+}
+function downKey() {
+	gameSound("./button.mp3")
+
+	if(lgbNum < lgSelector.length)
+	 	lgbNum++;
+	//return null
+
+	lgL = document.getElementById(lgbName+lgbNum)
+	lgR = document.getElementById(lgbName+(lgbNum-1))
+	var positions = elementPosition(lgL);
+	let go = positions.clientY-150
+
+	if(lgbNum == 1)
+		go = 0
+
+	if(lgL !== null) {
+	 	lgL.classList.add('focus')
+	 	lgL.style.transform = "scale(.9) "
+	 	document.getElementById('content-lists').style.transform = "translateY(-"+(go)+"px)"
+
+		nameH(lgL.dataset.name)
+	}
+
+	if(lgR !== null) {
+	 	lgR.classList.remove('focus')
+	 	lgR.style.transform = "scale(.8)"
 	}
 }
