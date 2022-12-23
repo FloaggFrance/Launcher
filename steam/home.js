@@ -24,41 +24,32 @@ window.onkeydown = (e) => {
 	let key = e.code;
 	console.log(key)
 
+	clearFocus()
+
 	if(lgL !== null)
 		gSelector = lgL.querySelectorAll('.gSelector')
 
-	if(key == "ArrowRight")
-		rightKey()
+	switch(key) {
+		case "ArrowUp":
+			upKey()
+			break
 
-	if(key == "ArrowLeft")
-		leftKey()
+		case "ArrowDown":
+			downKey()
+			break
 
-	if(key == "Escape") {
-		nameH('Home')
-		gameSound("./back.mp3")
-		setTimeout(function() {
-			gbNum = 0
-			lgbNum = 0
-			bannerUpdate("https://www.spawnpoiint.com/wp-content/uploads/Wallpaper-Blue-Icons-PS4-1920x1080.png", "none", "none")
-			
-			scrollSelectorGame()
+		case "ArrowLeft":
+			leftKey()
+			break
 
-			lgL.classList.remove('focus')
-			lgL=null
-			lgR=null
-			document.getElementById('content-lists').style.transform = "translateY(-0px)"
+		case "ArrowRight":
+			rightKey()
+			break
 
-			gSelector.forEach(function(e) {
-	 			removeFocus(e)
-	 		})
-		}, 300)
+		case "Escape":
+			escapeKey()
+			break
 	}
-
-	if(key == "ArrowDown")
-		downKey()
-
-	if(key == "ArrowUp")
-		upKey()
 
 	console.log(lgbNum)
 }
@@ -184,7 +175,7 @@ function leftKey() {
 
 	gL = lgL.querySelector("#"+gbName+gbNum)
 	gR = lgL.querySelector("#"+gbName+(gbNum+1))
-	
+
 	if(lgL !== null) {
 		setTimeout(()=>{
 			addFocus(gL)
@@ -202,54 +193,54 @@ function leftKey() {
 	}
 }
 function rightKey() {
-	gameSound("./button.mp3")
 
-		if(gbNum < gSelector.length)
-	 		gbNum++;
+	if(gbNum < gSelector.length)
+	 	gbNum++;
 
-	 	gL = lgL.querySelector("#"+gbName+gbNum)
-		gR = lgL.querySelector("#"+gbName+(gbNum-1))
+	gL = lgL.querySelector("#"+gbName+gbNum)
+	gR = lgL.querySelector("#"+gbName+(gbNum-1))
 
-		if(lgL !== null) {
-			setTimeout(()=>{
-				addFocus(gL)
-				removeFocus(gR)
+	if(lgL !== null) {
+		setTimeout(()=>{
+			addFocus(gL)
 
-				bannerUpdate(gL.dataset.bImg, gL.dataset.bLogo, "block")
+			bannerUpdate(gL.dataset.bImg, gL.dataset.bLogo, "block")
 
-				scrollSelectorGame()
-			}, 120)
-		}
+			scrollSelectorGame()
+		}, 120)
+		gameSound("./button.mp3")
+	}
 }
 function upKey() {
-	gameSound("./button.mp3")
+	gbNum = 0 // focus
 
-		if(lgbNum > 1)
-	 		lgbNum--;
+	if(lgbNum > 1)
+		lgbNum--;
 	 	//return null
 
-	 	lgL = document.getElementById(lgbName+lgbNum)
-		lgR = document.getElementById(lgbName+(lgbNum+1))
-		var positions = elementPosition(lgL);
-		let go = positions.clientY-150
-		if(lgbNum == 1)
-			go = 0
+	lgL = document.getElementById(lgbName+lgbNum)
+	lgR = document.getElementById(lgbName+(lgbNum+1))
+	var positions = elementPosition(lgL);
+	let go = positions.clientY-150
+	if(lgbNum == 1)
+		go = 0
 
-		if(lgL !== null) {
-		 	lgL.classList.add('focus')
-		 	lgL.style.transform = "scale(.9) "
-		 	document.getElementById('content-lists').style.transform = "translateY(-"+(go)+"px)"
-			nameH(lgL.dataset.name)
-		}
+	if(lgL !== null) {
+	 	lgL.classList.add('focus')
+	 	lgL.style.transform = "scale(.9) "
+	 	document.getElementById('content-lists').style.transform = "translateY(-"+(go)+"px)"
+		nameH(lgL.dataset.name)
+		gameSound("./back.mp3")
+	}
 
-		if(lgR !== null) {
-		 	lgR.classList.remove('focus')
-		 	lgR.style.transform = "scale(.8)"
-		}
+	if(lgR !== null) {
+	 	lgR.classList.remove('focus')
+	 	lgR.style.transform = "scale(.8)"
+	}
 		console.log(positions.viewportY)
 }
 function downKey() {
-	gameSound("./button.mp3")
+	gbNum = 0 // focus
 
 	if(lgbNum < lgSelector.length)
 	 	lgbNum++;
@@ -269,10 +260,47 @@ function downKey() {
 	 	document.getElementById('content-lists').style.transform = "translateY(-"+(go)+"px)"
 
 		nameH(lgL.dataset.name)
+		gameSound("./back.mp3")
 	}
 
 	if(lgR !== null) {
 	 	lgR.classList.remove('focus')
 	 	lgR.style.transform = "scale(.8)"
 	}
+}
+
+function escapeKey() {
+	nameH('Home')
+	gameSound("./back.mp3")
+	setTimeout(function() {
+		reset() 
+		bannerUpdate("https://www.spawnpoiint.com/wp-content/uploads/Wallpaper-Blue-Icons-PS4-1920x1080.png", "none", "none")
+			
+		//scrollSelectorGame()
+		
+		document.getElementById('content-lists').style.transform = "translateY(-0px)"
+
+	}, 300)
+}
+
+function clearFocus() {
+	if(gSelector !== null) {
+
+		gSelector.forEach(function(e) {
+			removeFocus(e)
+		})
+	}
+}
+
+function reset() {
+	gbNum = 0 // focus
+	lgbNum = 0 // la bar de selection
+
+	if(lgL !== null) {
+		scrollSelectorGame()
+		lgL.classList.remove('focus')
+	}
+
+	lgL=null
+	lgR=null
 }
