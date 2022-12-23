@@ -1,0 +1,180 @@
+[
+	{
+		"name": "Game",
+		"data": [
+			{
+				"name":"Monument Valley",
+				"banner":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1927720\/ss_747754e9b8f75a23edaef78ac878ef484e80e0a0.1920x1080.jpg?t=1665501420",
+				"logo":"https:\/\/static1.squarespace.com\/static\/527b69fbe4b0febeee4fc9f7\/t\/537a3055e4b02080802e16cd\/1452015483272\/",
+				"min":"https:\/\/is4-ssl.mzstatic.com\/image\/thumb\/Purple122\/v4\/53\/ad\/ce\/53adce5c-3e92-a356-29da-fd6d8671dd52\/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png\/512x512bb.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Monument.Valley.Panoramic.Edition.v3.3.319\/MonumentValley.exe"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			}
+		]
+	},
+	{
+		"name": "Game Online",
+		"data": [
+			{
+				"name":"Monument Valley",
+				"banner":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1927720\/ss_747754e9b8f75a23edaef78ac878ef484e80e0a0.1920x1080.jpg?t=1665501420",
+				"logo":"https:\/\/static1.squarespace.com\/static\/527b69fbe4b0febeee4fc9f7\/t\/537a3055e4b02080802e16cd\/1452015483272\/",
+				"min":"https:\/\/is4-ssl.mzstatic.com\/image\/thumb\/Purple122\/v4\/53\/ad\/ce\/53adce5c-3e92-a356-29da-fd6d8671dd52\/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png\/512x512bb.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Monument.Valley.Panoramic.Edition.v3.3.319\/MonumentValley.exe"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			},
+			{
+				"name":"Need For Speed",
+				"banner":"https:\/\/images.alphacoders.com\/110\/1108587.jpg",
+				"logo":"https:\/\/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com\/f\/cbef8a89-0b47-4ca5-9722-b48818fae2c3\/d52gtyb-2c369361-252a-4b65-ab93-e034a19c92d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY4YTg5LTBiNDctNGNhNS05NzIyLWI0ODgxOGZhZTJjM1wvZDUyZ3R5Yi0yYzM2OTM2MS0yNTJhLTRiNjUtYWI5My1lMDM0YTE5YzkyZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v3m9yjACjoBMCVi6pB9uZyY4ETxPaerpjWAxcjRTHFI",
+				"min":"https:\/\/static.actugaming.net\/media\/2020\/10\/need-for-speed-hot-pursuit-remastered-cover.jpg",
+				"game": "C:\/Users\/emma\/Documents\/games\/Need for Speed - Hot Pursuit\/NFS11.exe"
+			},
+			{
+				"name":"Minecraft For Windows",
+				"banner":"https:\/\/wallpaperaccess.com\/full\/171305.jpg",
+				"logo":"https:\/\/my.mcpedl.com\/storage\/texturepacks\/3860\/images\/minecraft-title-logo-swapper_7.png",
+				"min":"https:\/\/c.clc2l.com\/t\/m\/i\/minecraft-pocket-edition-HKhCSx.png",
+				"game": "C:\/Users\/emma\/Desktop\/Minecraft.lnk"
+			}
+		]
+	}
+]
