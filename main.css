@@ -1,0 +1,362 @@
+@import url(https://raw.githack.com/FloaggFrance/LiveReaload-CSS-Minimum-Codes/main/min.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+	outline: none;
+	user-select: none;
+}
+main {
+	transition: 0.2s;
+}
+body {
+	font-size: 21px;
+	font-family: 'Roboto', sans-serif;
+
+	overflow: hidden;
+
+	background-color: black;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	z-index: 999;
+
+	padding: 24px 100px;
+	color: #fff;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+header .user-info {
+	padding-right: 24px;
+	display: inline-block;
+	border-right: solid 2px rgba(255, 255, 255);
+}
+
+header .date-time {
+	padding-right: 24px;
+	display: inline-block;
+}
+header .date-time h1 {
+	font-weight: 200;
+}
+
+
+
+.grader {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	background: rgb(118,46,166);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+}
+
+body.start .grader {
+	display: none;
+}
+.background {
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.background .wallpaper {
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	display: none;
+
+	width: 100%;
+	height: 100%;
+}
+
+body.game-pass .background .wallpaper {
+	animation: animateStart 0.5s linear;
+	display: block;
+}
+
+body.home .background video {
+	animation: animateStart 0.5s linear;
+	display: block;
+}
+
+body.start .background {
+	animation: animateStart 0.5s linear;
+	opacity: .0;
+}
+
+.background video {
+	width: 100%;
+	display: none;
+}
+
+body.home .background video {
+	display: block;
+}
+
+.background .logo {
+	position: absolute;
+	top: 400px;
+	left: 30px;
+	display: block;
+	background-size: 100%;
+	background-position: bottom;
+	background-repeat: no-repeat;
+
+	width: 300px;
+	transition: 0.2s;
+
+	display: none;
+}
+
+body.play .background .logo {
+	height: 150px;
+	transition: 0.2s;
+}
+
+
+
+
+
+
+.select {
+	margin-bottom: 20px;
+	transform: scale(.8);
+
+	transition: 0.3s;
+	opacity: 0.6;
+	transition: 0.2s;
+
+	height: 140px;
+}
+
+.select:nth-child(1) {
+	margin-top: 200px;
+}
+
+body.start .select {
+	transform: translateX(-100%);
+}
+
+.select.focus {
+	opacity: 1.0;
+	transition: 0.2s;
+	margin-bottom: 200px;
+}
+
+.select ul {
+	list-style: none;
+	display: flex;
+}
+
+.select ul li {
+	margin-left: 8px;
+}
+
+body.game-pass .select li a {
+	opacity: 0.0;
+}
+
+body.game-pass .select.focus li a.focus {
+	opacity: 1.0;
+}
+
+.select article {
+	position: relative;
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.select.laucnh-type-systeme article {
+	flex-direction: column;
+	align-items: center;
+}
+
+.select article .media {
+	overflow: hidden;
+	border-radius: 16px;
+}
+
+.select li a.focus article .media {
+	position: relative;
+
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+
+	animation: azoom 1s infinite;
+}
+
+.select article img {
+	width: 90px;
+	height: 90px;
+
+	overflow: hidden;
+
+	background-color: rgba(0, 0, 0, 0.4);
+
+	display: block;
+	transition: 0.2s;
+}
+
+.select li a.focus article img {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	transition: 0.2s;
+}
+
+body.focus-press .select li a.focus article img {
+	animation: animatePress 0.5s linear;
+}
+
+.select.laucnh-type-systeme article img {
+	width: 360px;
+	height: 158px;
+}
+
+.select.laucnh-type-systeme a.focus article img {
+	width: 500px;
+	height: 230px;
+}
+
+
+.select article .name-game {
+	position: absolute;
+	top: 90px;
+	left: 130px;
+
+	display: none;
+
+	width: 600px;
+
+	text-shadow: 0px 0px 16px rgba(0, 0, 0);
+
+	transition: .2s;
+}
+
+.select li a.focus article .name-game {
+	display: block;
+}
+
+body.game-pass .select.focus li a.focus .name-game {
+	top: 50%;
+	transform: translateY(-50%);
+
+	transition: .2s;
+}
+
+@keyframes azoom {
+	from {
+		transform: scale(1.0);
+		opacity: 1.0;
+	}
+	50% {
+		transform: scale(1.1);
+		opacity: .6;
+	}
+	to {
+		transform: scale(1.0);
+		opacity: 1.0;
+	}
+}
+
+.select.laucnh-type-systeme a.focus .name-game {
+	position: relative;
+	top: 0;
+	left: 0;
+	transform: none;
+	display: block;
+	width: auto;
+
+	padding: 8px;
+}
+
+.select article h2 {
+	font-weight: 300;
+	color: #fff;
+}
+
+
+
+
+
+@keyframes animatePress {
+	from {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(0.8);
+	}
+	to {
+		transform: scale(1.0);
+	}
+}
+
+@keyframes animateStart {
+	from {
+		transform: scale(1.5);
+		opacity: .0;
+	}
+	to {
+		transform: scale(1.0);
+		opacity: 1.0;
+	}
+}
+
+
+
+
+
+#shutdown {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+
+	color: #fff;
+	background: rgba(0, 0, 0, 0.9);
+
+	display: none;
+
+	animation: animateEnd 0.5s linear;
+}
+
+body.shutdown #shutdown {
+	display: flex;
+	animation: animateStart 0.5s linear;
+}
+
+body.shutdown main#content-lists {
+	display: none;
+}
+
+@keyframes animateEnd {
+	from {
+		display: flex;
+		transform: scale(1.0);
+		opacity: 1.0;
+	}
+	to {
+		transform: scale(1.5);
+		opacity: .0;
+	}
+}

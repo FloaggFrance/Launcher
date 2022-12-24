@@ -24,7 +24,7 @@ window.onkeydown = (e) => {
 	let key = e.code;
 	console.log(key)
 
-	clearFocus()
+	
 
 	if(lgL !== null)
 		gSelector = lgL.querySelectorAll('.gSelector')
@@ -32,22 +32,33 @@ window.onkeydown = (e) => {
 	switch(key) {
 		case "ArrowUp":
 			upKey()
+			backgoundClear()
+			clearFocus()
 			break
 
 		case "ArrowDown":
 			downKey()
+			backgoundClear()
+			clearFocus()
 			break
 
 		case "ArrowLeft":
 			leftKey()
+			clearFocus()
 			break
 
 		case "ArrowRight":
 			rightKey()
+			clearFocus()
 			break
 
 		case "Escape":
 			escapeKey()
+			clearFocus()
+			break
+
+		case "Enter":
+			enterKey()
 			break
 	}
 
@@ -72,8 +83,8 @@ function showDate() {
 
 function bannerUpdate(bIMG, bLOGO, bDISPLAY) {
 	BannerImg.style.backgroundImage = "url("+bIMG+")" //; console.log(gL.dataset.bImg)
-	BannerLogo.src = bLOGO //; console.log(gL.dataset.bImg)
-	BannerLogo.style.display = bDISPLAY
+	//BannerLogo.src = bLOGO //; console.log(gL.dataset.bImg)
+	//BannerLogo.style.display = bDISPLAY
 }
 
 function addFocus(jo) {
@@ -90,18 +101,15 @@ function removeFocus(jo) {
 }
 
 function scrollSelectorGame() {
-	let bb = 20
+	let bb = 200
  	if(gbNum > 1)
- 		bb = -((98*(gbNum-1))-20)
+ 		bb = -((98*(gbNum-1))-200)
 
  	lgL.style.transform = "translateX("+bb+"px)"
 
  	if(gbNum == 0) {
  		lgL.style.transform = "scale(.8)"
  		body.classList.add('home')
- 	}
- 	else {
- 		body.classList.remove('home')
  	}
 }
 
@@ -112,6 +120,8 @@ function gameSound(soundLink = "./button.mp3") {
  	myAudio.addEventListener('ended', function () {
 	 	myAudio.remove()
 	})
+
+	return myAudio
 }
 
 function nameH(str) {
@@ -168,6 +178,24 @@ if(videoPlayer !== null) {
 	}
 }
 
+let gameMenu = null
+function enterKey() {
+	if(lgL !== null) {
+		//body.classList.add('game-pass')
+		if(gL !== null) {
+			setTimeout(()=>{
+				bannerUpdate(gL.dataset.bImg, gL.dataset.bLogo, "block")
+				body.classList.remove('home')
+				gameMenu = gameSound(gL.dataset.bSound)
+				body.classList.add('game-pass')
+			}, 100)
+			gameSound("./int.mp3")
+		}
+
+		if(gbNum == 0)
+			bannerUpdate("https://www.spawnpoiint.com/wp-content/uploads/Wallpaper-Blue-Icons-PS4-1920x1080.png", "none", "none")
+	}
+}
 
 function leftKey() {
 	if(gbNum > 0)
@@ -180,12 +208,6 @@ function leftKey() {
 		setTimeout(()=>{
 			addFocus(gL)
 			removeFocus(gR)
-
-			if(gL !== null)
-				bannerUpdate(gL.dataset.bImg, gL.dataset.bLogo, "block")
-
-			if(gbNum == 0)
-				bannerUpdate("https://www.spawnpoiint.com/wp-content/uploads/Wallpaper-Blue-Icons-PS4-1920x1080.png", "none", "none")
 
 			scrollSelectorGame()
 		}, 120)
@@ -204,7 +226,7 @@ function rightKey() {
 		setTimeout(()=>{
 			addFocus(gL)
 
-			bannerUpdate(gL.dataset.bImg, gL.dataset.bLogo, "block")
+			//bannerUpdate(gL.dataset.bImg, gL.dataset.bLogo, "block")
 
 			scrollSelectorGame()
 		}, 120)
@@ -216,7 +238,6 @@ function upKey() {
 
 	if(lgbNum > 1)
 		lgbNum--;
-	 	//return null
 
 	lgL = document.getElementById(lgbName+lgbNum)
 	lgR = document.getElementById(lgbName+(lgbNum+1))
@@ -270,6 +291,7 @@ function downKey() {
 }
 
 function escapeKey() {
+	body.classList.remove('game-pass')
 	nameH('Home')
 	gameSound("./back.mp3")
 	setTimeout(function() {
@@ -279,6 +301,9 @@ function escapeKey() {
 		//scrollSelectorGame()
 		
 		document.getElementById('content-lists').style.transform = "translateY(-0px)"
+
+		gameMenu.pause()
+		gameMenu.remove()
 
 	}, 300)
 }
@@ -303,4 +328,28 @@ function reset() {
 
 	lgL=null
 	lgR=null
+}
+
+function backgoundClear() {
+	body.classList.add('home')
+	bannerUpdate("https://www.spawnpoiint.com/wp-content/uploads/Wallpaper-Blue-Icons-PS4-1920x1080.png", "none", "none")
+}
+
+window.onblur = function() {
+	setTimeout(()=>{
+		document.getElementById('shutdown').style.display = "flex"
+		document.querySelector('body').classList.add('shutdown')
+		gameMenu.pause()
+		gameMenu.remove()
+		gameMenu = null
+		gameMenu = gameSound("./sound/minecraft.mp3")
+	}, 2000)
+}
+window.onfocus = function() {
+		document.querySelector('body').classList.remove('shutdown')
+		gameMenu.pause()
+		gameMenu.remove()
+	setTimeout(()=>{
+		document.getElementById('shutdown').style.display = "none"
+	}, 500)
 }
